@@ -1,0 +1,36 @@
+<section class="bem-vindo">
+        <h1 class="titulo-principal" >Cenas Icônicas destes animes!</h1>
+        <p class="intro">Nos próximos links temos algumas das cenas mais marcantes de cada uma das obras citadas anteriormente.</p>
+    </section>
+
+    <div class="navcenas">
+        <nav>
+            <ul class="navcenasul">
+                <li><a onclick="menu('cena_one_piece')" href="#">One Piece</a></li>
+                <li><a onclick="menu('cena_steins_gate')" href="#">Steins Gate</a></li>
+                <li><a onclick="menu('cena_bleach')" href="#">Bleach</a></li>
+            </ul>
+        </nav>
+    </div>
+
+    <br>  
+    <hr>
+    <div class="feedbacks">
+        <fieldset>
+            <form action="servidor_do_professor.php" method="post">
+        
+            <h3>Formulário de sugestões:</h3>
+            <label for="name">Nome:</label>
+            <input type="text" id="name" name="nome" placeholder="Digite seu nome"> 
+            <br>
+            <p>Feedbacks:</p>
+            <label for="feedbacks"></label>
+            <textarea id="feedbacks" name="feedbacks" rows="4" cols="50"></textarea>
+            <br>
+            <label for="enviar_forms"></label>
+            <input class="botao-enviar" type="submit" name="enviar_forms" value="Enviar">
+            </form>
+    
+            </fieldset>
+        </div>
+        <hr>

@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Pagina Inicial</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel='stylesheet' href='css/main.css' media='screen' >
+    <link rel="stylesheet" href="css/mobile.css" media="screen and (max-width: 768px)">
+    <link rel="icon" type="image/x-icon" href="images/favicon.ico">
+</head>
+<body onload="Read()">
+    <header class="header">
+        <a onclick="menu('index copia')" href="#" class="logo">Healzy Reviews</a>
+        <nav class="nav">
+            <input type="checkbox" id="checkbox" class="checkbox">
+            <label for="checkbox" class="label-menu">Menu<span class="hamburguer"></span></label>
+            <ul class="menu">
+                <li><a onclick="menu('home')" href="#">Página Inicial</a></li>
+                <li><a onclick="menu('MelhoresAnimes_Arcos')" href="#">Melhores Animes e seus Arcos</a></li>
+                <li><a onclick="menu('info_animes')" href="#">Informações dos Animes</a></li>
+                <li><a onclick="menu('forms')" href="#">Formulário sobre Gostos</a></li>
+                <li><a onclick="menu('cenas_iconicas')" href="#">Cenas Icônicas</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main id="conteudo">
+        
+        <section class="bem-vindo">
+            <h1 class="titulo-principal" >Bem-Vindo ao meu Site</h1>
+            <p class="intro">Este projeto foi criado como parte da Avaliação 3 de Introdução ao Desenvolvimento Web. O site é inspirado nos meus animes favoritos e é projetado para funcionar como um blog onde mostro algumas informações sobre eles e etc.</p>
+            
+            <article class="itens-anime">
+                <h4 class="nome-anime" >Espero que goste!</h4>
+                <img src="images/steins gate img.jpg" alt="imagem-de-steins-gate" class="anime-imagens-mudando">
+            </article>
+            
+        </section>
+
+        
+    </main>
+
+    <div class="adaptado">
+        <header>
+            <H1>Fatos <b>CRUDosos</b></H1>
+        </header>
+    <main>
+    <section>
+        <h2>Curiosidade do Usuário</h2>
+        <input type="text" id="nome" placeholder="Nome/Apelido">
+        <input type="text" id="anime" placeholder="Anime">
+        <input type="text" id="fato" placeholder="Curiosidade">
+        <input type="hidden" id="id">
+        <button id="salvar" onclick="Save()">Salvar</button>
+    </section>
+    <section>
+        <h2>Curiosidades Salvas</h2>
+        <table>
+            <thead>
+                <tr>
+                    <th>Id</th>
+                    <th>Nome</th>
+                    <th>Anime</th>
+                    <th>Curiosidade</th>
+                    <th>Ações</th>
+                </tr>
+            </thead>
+            <tbody id="dados">                
+            </tbody>
+        </table>
+    </section>
+    </main>
+    </div>
+    
+    <footer>
+        <div class="propaganda">
+            <section>
+                <h2>Propaganda</h2>
+                <p>Espaço reservado para propagandas.</p>
+            </section>
+        </div>
+        <div class="redes-sociais">
+            <p>Redes Sociais:</p>
+            <a href="https://www.instagram.com/icaro_https/">
+                <img src="images/instagram icon.svg" alt="instagram">
+            </a>
+            <a href="https://github.com/Healzy1">
+                <img src="images/github icon.svg" alt="instagram">
+            </a>
+        </div>
+    </footer>
+    
+    <script src='main.js'></script>
+</body>
+</html>

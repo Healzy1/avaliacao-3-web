@@ -1,0 +1,361 @@
+@import url('https://cdn.materialdesignicons.com/4.5.95/css/materialdesignicons.min.css');
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html{
+    font-size: 16px;
+    font-family: 'Roboto', sans-serif;
+}
+
+body{
+    display: flex;
+    flex-direction: column;
+    background-color: #f5f5f5;
+    min-height: 100vh;
+}
+
+.header{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #0078d4;
+    padding: 1rem;
+    height: 6rem;
+}
+
+a{
+    color: white;
+    text-decoration: none;
+}
+
+.logo{
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+.menu{
+    list-style-type: none;
+    display: flex;
+    gap: 0.5rem;
+}
+
+.menu a{
+    color: white;
+    text-decoration: none;
+    display: block;
+    padding: 1rem;
+    border-radius: 0.5rem;
+}
+
+.menu a:hover{
+    background-color: #0066b2;
+}
+
+.nav{
+    color: white;
+}
+
+.navcenasul{
+    list-style-type: none;
+    display: flex;
+    gap: 0.5rem;
+    justify-content: center;
+}
+
+.navcenasul a{
+    color: black;
+    text-decoration: none;
+    display: block;
+    padding: 1rem;
+    border-radius: 0.5rem;
+    background-color: #75c3ff;
+}
+
+.navcenasul a:hover{
+    background-color: #0066b2;
+}
+
+.label-menu, .checkbox{
+    display: none;
+}
+
+footer{
+    background-color: #0066b2;
+    color: #ffffff;
+    margin-top: auto;
+}
+
+footer a{
+    text-decoration: none;
+}
+
+h1{
+    text-shadow: 0.2px 0.2px 2px gray;
+}
+
+.nome-anime {
+    color: #0078d4;
+    text-shadow: 2px 2px 4px rgba(0,0,0,0.5);
+    letter-spacing: 1px;
+    font-size: 2rem;
+    margin: 1rem 1rem;
+    text-align: center;
+}
+
+.intro{
+    font-weight: 100;
+    font-size: 1rem;
+    padding: 5px;
+    margin: 20px 40px 20px 40px;
+    line-height: 1.5;
+    text-shadow: 1px 1px 100px rgba(0,0,0,0.3);
+    text-align: center;
+}
+
+.itens-anime p{
+    font-size: 1rem;
+    padding: 5px;
+    margin: 20px 40px 20px 40px;
+    line-height: 1.5;
+}
+
+.redes-sociais{
+    display: flex;
+    padding: 0.5vh 0.5vw;
+    align-items: center;
+}
+
+.redes-sociais p{
+    text-transform: uppercase;
+    font-weight: bold;
+}
+
+.anime-imagens{
+    display: block;
+    margin: auto;
+    max-width: 50%;
+    height: auto;
+    border: 2px solid #75c3ff;
+}
+
+.anime-imagens-mudando{
+    display: block;
+    margin: auto;
+    max-width: 50%;
+    height: auto;
+    border: 2px solid #75c3ff;
+    margin-bottom: 1vw;
+}
+
+.titulo-principal{
+    font-size: 2rem;
+    display: flex;
+    justify-content: center;
+    margin-top: 1rem;
+    color: #333;
+}
+
+.bem-vindo a{
+    text-decoration: none;
+}
+
+.cenas_iconicas_p{
+    color: #0078d4;
+}
+
+.bem-vindo p a:hover{
+    color: #49b0ff;
+    text-decoration: underline;
+}
+
+.listas{
+    padding: 5px;
+    border: 2px solid black;
+    width: 50%;
+    margin-left: 25%;
+    text-align: center;
+    background-color:#ADD8E6 ;
+    margin-bottom: 5px;
+}
+
+.listas ol{
+    padding: 5px;
+    margin: 20px 40px 20px 40px;
+}
+
+.listas li{
+    color: #333;
+    margin-bottom: 10px;
+}
+
+.listas ul li{
+    font-size: 1.5rem;
+}
+
+.listas ul li ol li{
+    font-size: 1.3rem;
+}
+
+table{
+    padding: 5px;
+    margin: auto;
+    width: 50%;
+    background-color: #ADD8E6;
+    margin-bottom: 10px;
+}
+
+table, th, td{
+    border: 1px solid #0078d4;
+}
+
+th, td{
+    padding: 12px;
+    text-align: center;
+}
+
+.propaganda{
+    width: 100%;
+}
+
+.propaganda section{
+    text-align: center;
+    padding: 28px;
+    background-color: #333;
+    margin: 0;
+}
+
+fieldset{
+    display: flex;
+    justify-content: center;
+    border: 2px solid grey;
+    margin: 20px 25% 20px 25%;
+    background-color: #ADD8E6;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+textarea{
+    border-radius: 5px;
+}
+
+input{
+    border-radius: 5px;
+}
+
+.botao-enviar{
+    display: flex;
+    text-align: center;
+    margin: 0 auto;
+    padding: auto;
+}
+
+.conteudo{
+    display: flex;
+    justify-content: center;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.video{
+    display: flex;
+    justify-content: center;
+    width: 1120px;
+    height: 630px;
+    border: 3px solid #0078d4;
+    border-radius: 20px;
+}
+
+.feedbacks form{
+    display: block;
+}
+
+/* CRUD */
+
+.adaptado * {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.adaptado header {
+    background-color: #222;
+    padding: 20px;
+    text-align: center;
+}
+
+.adaptado header b {
+    color: #0066b2;
+}
+
+.adaptado main {
+    display: flex;
+    flex-direction: row;
+}
+
+.adaptado main section {
+    width: 50vw;
+    padding: 20px;
+}
+
+.adaptado main section:first-child {
+    background-color: #444;
+}
+
+.adaptado section {
+    height: var(--SectionHeight);
+    background-color: #555;
+    height: 100vh;
+}
+.adaptado input, button{
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    font-size: 1.1rem;
+}
+.adaptado button{
+    border-color:#333;
+    background-color: #333;
+    color: white;
+    cursor: pointer;    
+}
+.adaptado button:hover{
+    background-color: #49b0ff;
+    color:#333;
+}
+.adaptado table{
+    width: 100%;
+    border-collapse: collapse;
+    margin-top:10px;
+
+}
+.adaptado table th{
+    background-color: #222;
+    color: white;
+}
+.adaptado table, th, td{
+    border: 2px solid #555;
+    padding:10px;
+}
+.adaptado th, td{
+    padding: 10px;
+    text-align: left;
+}
+.adaptado tr:hover{
+    background-color: #0078d4;
+    color: #333;
+    cursor: pointer;
+}
+.adaptado table i{
+    margin-right:10px;
+    margin-left: 10px;
+    font-size: 1.2rem;
+}

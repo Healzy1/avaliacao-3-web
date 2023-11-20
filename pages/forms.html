@@ -1,0 +1,50 @@
+<section class="bem-vindo">
+        <h1 class="titulo-principal" >Formulário Sobre seus Gostos!</h1>
+        <p class="intro">Este formulário será utilizado futuramente para que possamos recomendar melhores conteúdos focados em suas escolhas.</p>
+    </section>
+
+    <br>
+    <fieldset>
+    <form action="servidor_do_professor.php" method="post">
+
+    <label for="name">Nome:</label>
+    <input type="text" id="name" name="nome" placeholder="Digite seu nome"> 
+    <br>
+    <p>Insira seus animes favoritos:</p>
+    <label for="favoritos"></label>
+    <textarea id="favoritos" name="favoritos" rows="4" cols="50"></textarea>
+    <br>
+    <p>Genêros Favoritos:</p>
+    <label for="generos"></label>
+    <input type="checkbox" id="generos1" name="generos1" value="acao"> Ação
+    <label for="generos"></label>
+    <input type="checkbox" id="generos2" name="generos2" value="drama"> Drama
+    <label for="generos"></label>
+    <input type="checkbox" id="generos3" name="generos3" value="comedia"> Comédia
+    <label for="generos"></label>
+    <input type="checkbox" id="generos4" name="generos4" value="romance"> Romance
+    <label for="generos"></label>
+    <input type="checkbox" id="generos5" name="generos5" value="misterio"> Mistério
+    <label for="generos"></label>
+    <input type="checkbox" id="generos6" name="generos6" value="aventura"> Aventura
+    <label for="generos"></label>
+    <input type="checkbox" id="generos7" name="generos7" value="terror"> Terror
+
+    <p>Qual Método você utiliza com maior frequência para ver anime?</p>
+    <label for="mobile"></label>
+    <input type="radio" id="mobile" name="opcoes">Mobile
+
+    <label for="desktop"></label>
+    <input type="radio" id="desktop" name="opcoes">Desktop
+
+    <label for="TV"></label>
+    <input type="radio" id="tv" name="opcoes">TV
+    <br>
+    <label for="arquivo">Envie o papel de parede do seu personagem favorito:</label>
+    <input type="file" id="arquivo" name="arquivo">
+    <br>
+    <label for="enviar_forms"></label>
+    <input class="botao-enviar" type="submit" name="enviar_forms" value="Enviar">
+    </form>
+
+    </fieldset>

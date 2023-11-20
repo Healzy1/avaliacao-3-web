@@ -1,0 +1,363 @@
+
+
+/* parte da navegação*/
+
+.menu{
+    display: block;
+    position: absolute;
+    top: 4rem;
+    left: 0;
+    background-color: #0078d4;
+    text-align: center;
+    width: 100%;
+    height: 0;
+    z-index: 1;
+    transition: 0.5s;
+    visibility: hidden;
+    overflow-y: hidden;
+}
+
+.menu a{
+    padding: 1rem 0;
+    margin-inline: 1rem;
+    border-bottom: 0.0625rem solid #ADD8E6;
+    border-radius: 0;
+}
+
+.label-menu{
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    color: white;
+    padding: 1rem;
+    cursor: pointer;
+}
+
+.hamburguer{
+    border-top: 0.125rem solid;
+    width: 1.25rem;
+}
+
+.hamburguer::before,.hamburguer::after{
+    content: " ";
+    display: block;
+    width: 1.25rem;
+    height: 0.125rem;
+    background-color: white;
+    margin-top: 0.3125rem;
+    position: relative;
+    transition: 0.3s;
+}
+
+.checkbox:checked ~ .menu{
+    height: 29vh;
+    visibility: visible;
+    overflow-y: auto;
+}
+
+.checkbox:checked ~ .label-menu .hamburguer{
+    border-top-color: transparent;
+}
+
+.checkbox:checked ~ .label-menu .hamburguer::before{
+    transform: rotate(135deg);
+}
+
+.checkbox:checked ~ .label-menu .hamburguer::after{
+    transform: rotate(-135deg);
+    top: -0.40rem;
+}
+
+/* parte principal */
+
+html{
+    font-size: 14px;
+    font-family: 'Roboto', sans-serif;
+}
+
+body{
+    display: flex;
+    flex-direction: column;
+    background-color: #f5f5f5;
+    min-height: 100vh;
+}
+
+.titulo-principal{
+    text-align: center;
+    margin-top: 1.5rem;
+    font-size: 1.8rem;
+    margin-inline: 0.4rem;
+}
+
+.intro{
+    font-weight: 100;
+    font-size: 1rem;
+    padding: 5px;
+    margin: 1.5rem;
+    line-height: 1.5;
+    text-shadow: 1px 1px 100px rgba(0,0,0,0.3);
+    text-align: center;
+}
+
+/* articles dos animes */
+.itens-anime p{
+    font-size: 1rem;
+    padding: 5px;
+    margin: 1.5rem;
+    line-height: 1.5;
+}
+
+.nome-anime {
+    color: #0078d4;
+    text-shadow: 2px 2px 4px rgba(0,0,0,0.5);
+    letter-spacing: 1px;
+    font-size: 2.5rem;
+    margin: 1rem 1rem;
+    text-align: center;
+}
+
+.anime-imagens{
+    display: block;
+    margin: auto;
+    max-width: 85%;
+    height: auto;
+    border: 2px solid #75c3ff;
+}
+
+.anime-imagens-mudando{
+    display: block;
+    margin: auto;
+    max-width: 80%;
+    height: auto;
+    border: 2px solid #75c3ff;
+}
+
+/* listas melhores animes e arcos  */
+
+.listas{
+    padding: 5px;
+    border: 2px solid black;
+    width: 80vw;
+    margin: auto;
+    text-align: center;
+    background-color:#ADD8E6 ;
+    margin-bottom: 5px;
+}
+
+.listas ol{
+    padding: 5px;
+    margin: 20px 40px 20px 40px;
+}
+
+.listas li{
+    color: #333;
+    margin-bottom: 10px;
+}
+
+.listas ul li{
+    font-size: 1.5rem;
+}
+
+.listas ul li ol li{
+    font-size: 1.3rem;
+}
+
+/* parte dos tables // infos dos animes */
+
+table{
+    padding: 5px;
+    margin: auto;
+    width: 90%;
+    background-color: #ADD8E6;
+    margin-bottom: 10px;
+}
+
+table, th, td{
+    border: 1px solid #0078d4;
+}
+
+th, td{
+    padding: 12px;
+    text-align: center;
+}
+
+/* parte dos formulários*/
+
+fieldset{
+    border: 2px solid grey;
+    background-color: #ADD8E6;
+    padding: 10px;
+    text-align: left;
+    box-sizing: border-box;
+    margin: 0 auto;
+    max-width: 95%;
+}
+
+.feedbacks{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    max-width: 100%;
+}
+
+.feedbacks-iconicas{
+    align-items: center;
+    max-width: 100%;
+}
+
+textarea {
+    width: 100%;
+}
+
+.botao-enviar {
+    display: block;
+    margin: 0 auto; 
+}
+
+/* propaganda */
+.propaganda{
+    max-width: 100%;
+    margin: auto;
+}
+
+.propaganda section{
+    text-align: center;
+    padding: 20px;
+    background-color: #333;
+}
+
+/* cenas de cada anime */
+
+.conteudo{
+    display: flex;
+    justify-content: center;
+    margin-top: 2px;
+    margin-bottom: 50px;
+}
+
+.video{
+    display: flex;
+    justify-content: center;
+    width: 85%;
+    height: 204px;
+    border: 2px solid #0078d4;
+    border-radius: 10px;
+}
+
+
+/* footer com redes sociais */
+
+footer{
+    background-color: #0066b2;
+    color: #ffffff;
+    margin-top: auto;
+    padding: 0.1rem;
+}
+
+footer a{
+    text-decoration: none;
+}
+
+.redes-sociais{
+    display: flex;
+    padding: 0.3vh 0.3vw;
+    align-items: center;
+}
+
+.redes-sociais img{
+    padding: 0.1rem;
+}
+
+.redes-sociais p{
+    text-transform: uppercase;
+    font-weight: bold;
+    margin-left: 0.5rem;
+}
+
+/* crudosidades socorro */
+
+.adaptado * {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    overflow-x: hidden;
+}
+
+.adaptado header {
+    background-color: #222;
+    padding: 20px;
+    text-align: center;
+    height: var(--HeaderHeight);
+    margin-top: 1rem;
+}
+
+.adaptado header b {
+    color: #0066b2;
+}
+
+.adaptado main {
+    display: flex;
+    flex-direction: column;
+}
+
+.adaptado main section {
+    width: 100%;
+    padding: 20px;
+}
+
+.adaptado main section:first-child {
+    background-color: #444;
+}
+
+.adaptado section {
+    height: var(--SectionHeight);
+    background-color: #555;
+}
+.adaptado input, button{
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    font-size: 1.1rem;
+}
+.adaptado button{
+    border-color:#333;
+    background-color: #333;
+    color: white;
+    cursor: pointer;    
+}
+.adaptado button:hover{
+    background-color: #49b0ff;
+    color:#333;
+}
+.adaptado table{
+    width: 100%;
+    border-collapse: collapse;
+    margin-top:10px;
+
+}
+.adaptado table th{
+    background-color: #222;
+    color: white;
+}
+.adaptado table, th, td{
+    border: 2px solid #555;
+    padding:10px;
+}
+.adaptado th, .adaptado td {
+    font-size: 0.8em;
+    padding: 1.5px; 
+}
+
+.adaptado tr:hover{
+    background-color: #0078d4;
+    color: #333;
+    cursor: pointer;
+}
+.adaptado table i{
+    margin-right:10px;
+    margin-left: 10px;
+    font-size: 1.2rem;
+}
